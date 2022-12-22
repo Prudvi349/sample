@@ -37,7 +37,7 @@ jobs:
   display:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ always() }}
+    if: always()
     steps:
       - name: print a value
         run: echo from another job  
